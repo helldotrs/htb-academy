@@ -61,7 +61,7 @@ the - displays the content in terminal
 
 (((onesixtyone -c dict.txt 10.129.42.254)))
 
-#Conclusion
+##Conclusion
 (((
 VPN Servers
 
@@ -71,4 +71,8 @@ All VM instances associated with the old VPN Server will be terminated when swit
 Existing PwnBox instances will automatically switch to the new VPN server.
 )))
 
-#Web Enumeration
+# Web Enumeration
+
+## Gobuster
+" We can use a tool such as ffuf or GoBuster to perform this directory enumeration. "
+
