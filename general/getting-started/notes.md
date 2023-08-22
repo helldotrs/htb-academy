@@ -32,7 +32,7 @@ nc -nv <ip> <port>
 ## FTP
 nmap -sC -sV -p21 10.129.42.253
 ftp -p 10.129.42.253 ((( ls, cd <dir> get, <filename>, exit )))
-
+nmap -A -p445 10.129.42.253 (((look up -A flag)))
 ## SMB (Server Message Block) (Windows)
 (samba?)
 "some SMB versions may be vulnerable to RCE exploits such as EternalBlue"
