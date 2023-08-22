@@ -1,4 +1,4 @@
-
+//to-do: learn github.md syntax
 
 ## nmap:
 ### flags:
@@ -26,5 +26,9 @@ cyberSecHell@htb[/htb]$ locate scripts/citrix
 # Attacking Network Services
 
 ## Banner Grabbing
-nmap -sV --script=banner <target>
+nmap -sV --script=banner <target> (((  nmap -sV --script=banner -p21 10.10.10.0/24 )))
 nc -nv <ip> <port>
+
+## FTP
+nmap -sC -sV -p21 10.129.42.253
+ftp -p 10.129.42.253 ((( ls, cd <dir> get, <filename>, exit )))
