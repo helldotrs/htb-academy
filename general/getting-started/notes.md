@@ -32,8 +32,19 @@ nc -nv <ip> <port>
 ## FTP
 nmap -sC -sV -p21 10.129.42.253
 ftp -p 10.129.42.253 ((( ls, cd <dir> get, <filename>, exit )))
-nmap -A -p445 10.129.42.253 (((look up -A flag)))
+
 ## SMB (Server Message Block) (Windows)
 (samba?)
 "some SMB versions may be vulnerable to RCE exploits such as EternalBlue"
 "Nmap has many scripts for enumerating SMB, such as smb-os-discovery.nse, which will interact with the SMB service to extract the reported operating system version." (((nmap --script smb-os-discovery.nse -p445 10.10.10.40)))
+nmap -A -p445 10.129.42.253 (((look up -A flag)))
+
+### shares (SMB) 
+(((
+smbclient -N -L \\\\10.129.42.253
+)))
+SMB allows users and administrators to share folders and make them accessible remotely by other users. Often these shares have files in them that contain sensitive information such as passwords. A tool that can enumerate and interact with SMB shares is smbclient. The -L flag specifies that we want to retrieve a list of available shares on the remote host, while -N suppresses the password prompt.
+(((
+smbclient -U <user> \\\\10.129.42.253\\users   <users --> location?>
+)))
+ 
