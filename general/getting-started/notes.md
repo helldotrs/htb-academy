@@ -35,3 +35,5 @@ ftp -p 10.129.42.253 ((( ls, cd <dir> get, <filename>, exit )))
 
 ## SMB (Server Message Block) (Windows)
 (samba?)
+"some SMB versions may be vulnerable to RCE exploits such as EternalBlue"
+"Nmap has many scripts for enumerating SMB, such as smb-os-discovery.nse, which will interact with the SMB service to extract the reported operating system version." (((nmap --script smb-os-discovery.nse -p445 10.10.10.40)))
