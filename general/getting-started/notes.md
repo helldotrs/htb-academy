@@ -1,4 +1,4 @@
-//to-do: learn github.md syntax
+ //to-do: learn github.md syntax
 
 ## nmap:
 ### flags:
@@ -47,4 +47,28 @@ SMB allows users and administrators to share folders and make them accessible re
 (((
 smbclient -U <user> \\\\10.129.42.253\\users   <users --> location?>
 )))
+
+get <file> - 
+the - displays the content in terminal
  
+##SNMP
+"SNMP Community strings provide information and statistics about a router or device-SNIP- The manufacturer default community strings of public and private are often unchanged. In SNMP versions 1 and 2c, access is controlled using a plaintext community string, and if we know the name, we can gain access to it. Encryption and authentication were only added in SNMP version 3."
+
+(((snmpwalk -v 2c -c public 10.129.42.253 1.3.6.1.2.1.1.5.0)))
+(((snmpwalk -v 2c -c private  10.129.42.253 )))
+
+"A tool such as onesixtyone can be used to brute force the community string names using a dictionary file of common community strings such as the dict.txt file included in the GitHub repo for the tool."
+
+(((onesixtyone -c dict.txt 10.129.42.254)))
+
+#Conclusion
+(((
+VPN Servers
+
+Warning: Each time you "Switch", your connection keys are regenerated and you must re-download your VPN connection file.
+
+All VM instances associated with the old VPN Server will be terminated when switching to a new VPN server.
+Existing PwnBox instances will automatically switch to the new VPN server.
+)))
+
+#Web Enumeration
