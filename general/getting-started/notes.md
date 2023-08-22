@@ -22,3 +22,9 @@ cyberSecHell@htb[/htb]$ locate scripts/citrix
 
 /usr/share/nmap/scripts/citrix-brute-xml.nse
 )))
+
+# Attacking Network Services
+
+## Banner Grabbing
+nmap -sV --script=banner <target>
+nc -nv <ip> <port>
