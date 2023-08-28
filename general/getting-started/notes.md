@@ -76,3 +76,13 @@ Existing PwnBox instances will automatically switch to the new VPN server.
 ## Gobuster
 " We can use a tool such as ffuf or GoBuster to perform this directory enumeration. "
 
+
+
+
+# links
+https://nullsec.us/top-1-000-tcp-and-udp-ports-nmap-default/
+https://owasp.org/www-project-top-ten/
+https://www.stationx.net/common-ports-cheat-sheet/
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+### print
+https://packetlife.net/media/library/23/common-ports.pdf
