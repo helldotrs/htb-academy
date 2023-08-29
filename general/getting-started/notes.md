@@ -76,6 +76,11 @@ Existing PwnBox instances will automatically switch to the new VPN server.
 ## Gobuster
 " We can use a tool such as ffuf or GoBuster to perform this directory enumeration. "
 
+### Directory/File Enumeration
+gobuster dir -u http://10.10.10.121/ -w /usr/share/dirb/wordlists/common.txt <br>
+dirb common.txt <br>
+
+
 
 
 
