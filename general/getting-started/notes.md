@@ -133,6 +133,32 @@ searchsploit
 """We can also utilize online exploit databases to search for vulnerabilities, like Exploit DB, Rapid7 DB, or Vulnerability Lab. The Intro to Web Applications module discusses public vulnerabilities for web applications: https://academy.hackthebox.com/module/details/75
 /*see more links under links--> exploits*/"""
 
+## Metasploit Primer
+msfconsole
+"""
+
+
+The Metasploit Framework (MSF) is an excellent tool for pentesters. It contains many built-in exploits for many public vulnerabilities and provides an easy way to use these exploits against vulnerable targets. MSF has many other features, like:
+
+-    Running reconnaissance scripts to enumerate remote hosts and compromised targets
+
+-    Verification scripts to test the existence of a vulnerability without actually compromising the target
+
+-    Meterpreter, which is a great tool to connect to shells and run commands on the compromised targets
+
+-    Many post-exploitation and pivoting tools
+
+Let us take a basic example of searching for an exploit for an application we are attacking and how to exploit it. To run Metasploit, we can use the msfconsole command:
+"""
+- $ msfconsole
+
+"""Once we have Metasploit running, we can search for our target application with the search exploit command. For example, we can search for the SMB vulnerability we identified previously:
+"""
+- msf6 > search exploit eternalblue
+"""Tip: Search can apply complex filters such as search cve:2009 type:exploit. See all the filters with help search"""
+- > use exploit/windows/smb/ms17_010_psexec
+- > show options
+
 
 
 # links
