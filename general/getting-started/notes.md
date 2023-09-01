@@ -171,6 +171,28 @@ LHOST => tun0
 
 - > check"""
 
+- > run / > exploit
+
+- > search
+- > show options
+- > set
+  > check
+  > exploit
+
+"""As we can see, we have been able to gain admin access to the box and used the shell command to drop us into an interactive shell. These are basic examples of using Metasploit to exploit a vulnerability on a remote server. There are many retired boxes on the Hack The Box platform that are great for practicing Metasploit. Some of these include, but not limited to:
+
+    Granny/Grandpa
+    Jerry
+    Blue
+    Lame
+    Optimum
+    Legacy
+    Devel
+"""
+
+Nibbles.
+
+
 
 
 # links
