@@ -85,7 +85,7 @@ dirb common.txt <be>
 -403 HTTP status code indicates that we are forbidden to access the resource. 
 -301 status code indicates that we are being redirected, which is not a failure case. 
 --It is worth familiarizing ourselves with the various HTTP status codes, which can be found at: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-
+--The Web Requests Academy Module also covers HTTP status codes further in-depth.
 
 
 
