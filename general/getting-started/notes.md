@@ -124,6 +124,16 @@ remember evil-robots.txt?
 #### Source Code
 -has anyone ever found credentials in a source code in the real world??
 
+# Public Exploits
+searchsploit
+- $ sudo apt install exploitdb -y
+
+"""we can use searchsploit to search for a specific application by its name, as follows:"""
+- $ searchsploit openssh 7.2
+"""We can also utilize online exploit databases to search for vulnerabilities, like Exploit DB, Rapid7 DB, or Vulnerability Lab. The Intro to Web Applications module discusses public vulnerabilities for web applications: https://academy.hackthebox.com/module/details/75
+/*see more links under links--> exploits*/"""
+
+
 
 # links
 https://nullsec.us/top-1-000-tcp-and-udp-ports-nmap-default/  <br>
@@ -132,3 +142,7 @@ https://www.stationx.net/common-ports-cheat-sheet/  <br>
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax  <br>
 ### print
 https://packetlife.net/media/library/23/common-ports.pdf
+### exploits
+- https://www.exploit-db.com/
+- https://www.rapid7.com/db/
+- https://www.vulnerability-lab.com/
