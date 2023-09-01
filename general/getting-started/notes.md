@@ -87,7 +87,42 @@ dirb common.txt <be>
 --It is worth familiarizing ourselves with the various HTTP status codes, which can be found at: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 --The Web Requests Academy Module also covers HTTP status codes further in-depth.
 
+### DNS Subdomain Enumeration
+#### install SecLists
+clone SecLists:
+-$ git clone https://github.com/danielmiessler/SecLists
+-$ sudo apt install seclists -y
+"""
+Next, add a DNS Server such as 1.1.1.1 to the /etc/resolv.conf file. We will target the domain inlanefreight.com, the website for a fictional freight and logistics company.
+"""
+-$ gobuster dns -d inlanefreight.com -w /usr/share/SecLists/Discovery/DNS/namelist.txt
 
+"""
+This scan reveals several interesting subdomains that we could examine further. The Attacking Web Applications with Ffuf module goes into more details about web enumeration and fuzzing.
+https://academy.hackthebox.com/module/details/54
+"""
+
+## Web Enumeration Tips
+#### Banner Grabbing / Web Server Headers
+- curl -IL https://www.inlanefreight.com
+use cURL to grab banner/headers
+learn cURL
+"""Another handy tool is EyeWitness, which can be used to take screenshots of target web applications, fingerprint them, and identify possible default credentials.:
+https://github.com/FortyNorthSecurity/EyeWitness
+"""
+#### Whatweb
+-whatweb 10.10.10.121
+whatweb --no-errors 10.10.10.0/24
+
+#### Certificates
+PHISING
+SSL/TLS certificates are another potentially valuable source of information if HTTPS is in use. Browsing to https://10.10.10.121/ and viewing the certificate reveals the details below, including the email address and company name. These could potentially be used to conduct a phishing attack if this is within the scope of an assessment.
+
+#### robots.txt
+remember evil-robots.txt?
+
+#### Source Code
+-has anyone ever found credentials in a source code in the real world??
 
 
 # links
