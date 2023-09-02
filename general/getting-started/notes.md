@@ -1,4 +1,5 @@
  //to-do: learn github.md syntax
+ //to-do: grab flag: https://academy.hackthebox.com/module/77/section/843
 
 ## nmap:
 ### flags:
